@@ -1,288 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Dev Community SRM</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Game Dev Community SRM</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body>
+  <!-- Background -->
+  <div class="bg-animated"></div>
 
-  <!-- Navbar -->
-  <nav class="fixed w-full bg-gray-800 shadow-lg z-50">
-    <div class="flex justify-between items-center px-6 py-4">
-      <!-- Logo -->
-      <div class="text-2xl font-bold">🎮 GDC SRM</div>
-      <!-- Menu -->
-      <div class="space-x-6">
-        <a href="#projects" class="hover:text-yellow-400">Projects</a>
-        <a href="#team" class="hover:text-yellow-400">Team</a>
-        <a href="#domains" class="hover:text-yellow-400">Domains</a>
-        <a href="#events" class="hover:text-yellow-400">Events</a>
-      </div>
+ <!-- Top Navbar -->
+<nav class="neon-navbar">
+  <div class="nav-left">
+    <div class="nav-icon"></div>
+    <span class="neon-title">GDC SRM</span>
+  </div>
+  <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+  </button>
+  <div class="nav-links" id="nav-menu">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#team" class="nav-link">Team</a>
+    <a href="#domains" class="nav-link">Domains</a>
+    <a href="#events" class="nav-link">Events</a>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <h1 class="neon-gradient">Game Developers Community SRM</h1>
+    <p>Empowering students to build, create, and showcase amazing games 🚀</p>
+  </section>
+
+ <!-- About Section with extended content -->
+<section id="about" class="section-box">
+  <h2>About Us</h2>
+  <div class="section-title-line"></div>
+  <div class="about-cards">
+    <div class="about-card">
+      <h3>Who Are We?</h3>
+      <p>We the Game Developers Community SRM, aim to empower the existing and to nurture the budding game designers and developers in our University. We, as a collective plan to dive headfirst into the ever-expanding world of game development and create experiences worth experiencing.</p>
     </div>
-  </nav>
+    <div class="about-card">
+      <h3>Mission</h3>
+      <p>Our mission is to foster creativity, collaboration, and technical skills in game development among students by providing a platform for learning and innovation. We aim to empower future game developers through engaging events, practical experiences, and industry exposure, promoting a vibrant gaming culture in our college.</p>
+    </div>
+    <div class="about-card">
+      <h3>Vision</h3>
+      <p>To be a leading college club that inspires and nurtures the next generation of game developers, creating an ecosystem where students can explore their passion for gaming, develop industry-relevant skills, and establish meaningful connections with professionals in the game development community.</p>
+    </div>
+  </div>
+  <div class="section-title-line"></div>
+</section>
 
-  <!-- About Us -->
-  <section id="about" class="pt-24 px-6">
-    <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <!-- Who Are We -->
-      <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold mb-3">Who Are We?</h3>
-        <p>We the Game Developers Community SRM, aim to empower the existing and to nurture the budding game designers and developers in our University. We, as a collective plan to dive headfirst into the ever-expanding world of game development and create experiences worth experiencing.</p>
+ <!-- Projects with added Members Info -->
+<section id="projects" class="section-box">
+  <h2>Projects</h2>
+  <div class="section-title-line"></div>
+  <div class="project-cards">
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x200" alt="Galactic Run Thumbnail" onerror="this.src='https://via.placeholder.com/400x200?text=No+Image'"/>
+      <h3>Galactic Run</h3>
+      <p class="members-info">Members: 4</p>
+      <p class="members-info">Sankha, Ananya, Pranshu, Abhijeet</p>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x200" alt="Pixel Wars Thumbnail" onerror="this.src='https://via.placeholder.com/400x200?text=No+Image'"/>
+      <h3>Pixel Wars</h3>
+      <p class="members-info">Members: 3</p>
+      <p class="members-info">Shrey, Yatharth, Aakaash</p>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x200" alt="Escape the Dungeon Thumbnail" onerror="this.src='https://via.placeholder.com/400x200?text=No+Image'"/>
+      <h3>Escape the Dungeon</h3>
+      <p class="members-info">Members: 2</p>
+      <p class="members-info">Pranav, Sarthak</p>
+    </div>
+    <!-- Add more if needed -->
+  </div>
+  <div class="section-title-line"></div>
+</section>
+
+  <!-- Team Tree -->
+  <section id="team" class="section-box">
+    <h2>Team</h2>
+    <div class="tree-container">
+      <!-- President Row -->
+      <div class="team-tree-row">
+        <div class="team-card">
+          <img src="team/president.jpg" onerror="this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png'"/>
+          <h3>President</h3>
+          <p>Sankha Subhra Ghosh</p>
+        </div>
       </div>
-      <!-- Mission -->
-      <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold mb-3">Mission</h3>
-        <p>Our mission is to foster creativity, collaboration, and technical skills in game development among students by providing a platform for learning and innovation. We aim to empower future game developers through engaging events, practical experiences, and industry exposure, promoting a vibrant gaming culture in our college.</p>
+      <!-- Vertical connector -->
+      <div class="tree-connector vertical"></div>
+      <!-- Vice President Row -->
+      <div class="team-tree-row">
+        <div class="team-card">
+          <img src="team/vicepresident.jpg" onerror="this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png'"/>
+          <h3>Vice President</h3>
+          <p>Shrey Sharma</p>
+        </div>
       </div>
-      <!-- Vision -->
-      <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold mb-3">Vision</h3>
-        <p>To be a leading college club that inspires and nurtures the next generation of game developers, creating an ecosystem where students can explore their passion for gaming, develop industry-relevant skills, and establish meaningful connections with professionals in the game development community.</p>
-      </div>
+      <!-- Horizontal connector -->
+      <div class="tree-connector horizontal"></div>
+      <!-- Heads Collective -->
+      <!-- Team Heads names added -->
+<div class="team-tree-row multi-row" aria-label="Team Heads">
+  <div class="team-card"><img src="team/technical.jpg" alt="Technical Head" onerror="this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png'" /><h3>Technical Head</h3><p>Ananya Burra</p></div>
+  <div class="team-card"><img src="team/creative.jpg" alt="Creative Head" onerror="this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png'" /><h3>Creative Head</h3><p>Pranshu Verma</p></div>
+  <div class="team-card"><img src="team/content.jpg" alt="Content Head" onerror="this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png'" /><h3>Content Head</h3><p>Abhijeet Sharma</p></div>
+  <div class="team-card"><img src="team/corporate.jpg" alt="Corporate Head" onerror="this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png'" /><h3>Corporate Head</h3><p>Pranav Pande</p></div>
+</div>
+      <!-- And more branch lines as needed -->
+      
+      <!-- Lower hierarchy branches: 
+           Place as new rows with branch lines to connect them, styled similarly -->
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="py-20 px-6">
-    <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
-    <p class="text-center text-gray-400">🔧 Showcase club projects here...</p>
+  <!-- Domains -->
+  <section id="domains" class="section-box">
+    <h2>Domains</h2>
+    <div class="section-title-line"></div>
+    <div class="domain-cards">
+      <div class="domain-card"><h3>Technical</h3><p>Programming, game engines, AI, multiplayer, performance.</p></div>
+      <div class="domain-card"><h3>Creative</h3><p>Concept art, assets, animations, design.</p></div>
+      <div class="domain-card"><h3>Content</h3><p>Writing, lore, devlogs, tutorials.</p></div>
+      <div class="domain-card"><h3>Corporate</h3><p>Sponsorships, collaborations, events.</p></div>
+    </div>
+    <div class="section-title-line"></div>
   </section>
 
- <!-- Team -->
-<section id="team" class="py-20 px-6 bg-gray-800">
-  <h2 class="text-3xl font-bold text-center mb-12">Team</h2>
+ <!-- Events Timeline (vertical with subtle curves) -->
+<section id="events" class="section-events">
+  <h2 class="section-title neon-gradient">Events</h2>
+  <div class="vertical-timeline" aria-label="Vertical Events Timeline">
+    <div class="timeline-line"></div>
 
-  <!-- Tree Container -->
-  <div class="flex flex-col items-center space-y-10">
-
-    <!-- President -->
-    <div class="bg-gray-700 p-6 rounded-xl shadow-lg text-center w-60">
-      <img src="team/president.jpg" 
-           onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png';"
-           alt="President" 
-           class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 object-cover">
-      <h3 class="text-xl font-semibold">President</h3>
-      <p class="mt-2">Sankha Subhra Ghosh</p>
-    </div>
-
-    <!-- Connector -->
-    <div class="w-1 h-8 bg-yellow-400"></div>
-
-    <!-- Vice President -->
-    <div class="bg-gray-700 p-6 rounded-xl shadow-lg text-center w-60">
-      <img src="team/vicepresident.jpg" 
-           onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png';"
-           alt="Vice President" 
-           class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 object-cover">
-      <h3 class="text-xl font-semibold">Vice President</h3>
-      <p class="mt-2">Shrey Sharma</p>
-    </div>
-
-    <!-- Connector -->
-    <div class="w-1 h-8 bg-yellow-400"></div>
-
-    <!-- Heads -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg text-center w-60">
-        <img src="team/technical.jpg" 
-             onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png';"
-             alt="Technical Head" 
-             class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 object-cover">
-        <h3 class="text-xl font-semibold">Technical Head</h3>
-        <p class="mt-2">Ananya Burra</p>
+    <article class="event-block" tabindex="0" aria-label="Game Jam Event">
+      <div class="event-thumb">
+        <img src="https://via.placeholder.com/120x160?text=Game+Jam" alt="Game Jam Thumbnail" onerror="this.src='https://via.placeholder.com/120x160?text=No+Image'"/>
       </div>
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg text-center w-60">
-        <img src="team/creative.jpg" 
-             onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png';"
-             alt="Creative Head" 
-             class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 object-cover">
-        <h3 class="text-xl font-semibold">Creative Head</h3>
-        <p class="mt-2">Pranshu Verma</p>
+      <div class="event-date-badge" aria-hidden="true"></div>
+      <div class="event-content">
+        <h3>Game Jam</h3>
+        <p>Members rapidly build fun and unique games in 48 hours fostering creativity and collaboration.</p>
+        <span>January 2025</span>
       </div>
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg text-center w-60">
-        <img src="team/content.jpg" 
-             onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png';"
-             alt="Content Head" 
-             class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 object-cover">
-        <h3 class="text-xl font-semibold">Content Head</h3>
-        <p class="mt-2">Abhijeet Sharma</p>
-      </div>
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg text-center w-60">
-        <img src="team/corporate.jpg" 
-             onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png';"
-             alt="Corporate Head" 
-             class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 object-cover">
-        <h3 class="text-xl font-semibold">Corporate Head</h3>
-        <p class="mt-2">Pranav Pande</p>
-      </div>
-    </div>
+    </article>
 
-    <!-- Connector -->
-    <div class="w-1 h-8 bg-yellow-400"></div>
+    <article class="event-block" tabindex="0" aria-label="Unity Workshop Event">
+      <div class="event-thumb">
+        <img src="https://via.placeholder.com/120x160?text=Unity+Workshop" alt="Unity Workshop Thumbnail" onerror="this.src='https://via.placeholder.com/120x160?text=No+Image'"/>
+      </div>
+      <div class="event-date-badge" aria-hidden="true"></div>
+      <div class="event-content">
+        <h3>Unity Workshop</h3>
+        <p>A beginner-friendly workshop covering Unity basics, scripting, physics, and game mechanics.</p>
+        <span>March 2025</span>
+      </div>
+    </article>
 
-    <!-- Core Members -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg text-center w-60">
-        <img src="team/sarthak.jpg" 
-             onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png';"
-             alt="Core Member" 
-             class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 object-cover">
-        <h3 class="text-xl font-semibold">Core Member</h3>
-        <p class="mt-2">Sarthak Som Singh</p>
+    <article class="event-block" tabindex="0" aria-label="Industry Talk Event">
+      <div class="event-thumb">
+        <img src="https://via.placeholder.com/120x160?text=Industry+Talk" alt="Industry Talk Thumbnail" onerror="this.src='https://via.placeholder.com/120x160?text=No+Image'"/>
       </div>
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg text-center w-60">
-        <img src="team/yatharth.jpg" 
-             onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png';"
-             alt="Core Member" 
-             class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 object-cover">
-        <h3 class="text-xl font-semibold">Core Member</h3>
-        <p class="mt-2">Yatharth Tripathi</p>
+      <div class="event-date-badge" aria-hidden="true"></div>
+      <div class="event-content">
+        <h3>Industry Talk</h3>
+        <p>Learn from seasoned game development professionals as they share their experiences and insights.</p>
+        <span>May 2025</span>
       </div>
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg text-center w-60">
-        <img src="team/aakaash.jpg" 
-             onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png';"
-             alt="Core Member" 
-             class="w-24 h-24 mx-auto rounded-full mb-4 border-4 border-yellow-400 object-cover">
-        <h3 class="text-xl font-semibold">Core Member</h3>
-        <p class="mt-2">Aakaash K</p>
-      </div>
-    </div>
+    </article>
 
+    <article class="event-block" tabindex="0" aria-label="Design Jam Event">
+      <div class="event-thumb">
+        <img src="https://via.placeholder.com/120x160?text=Design+Jam" alt="Design Jam Thumbnail" onerror="this.src='https://via.placeholder.com/120x160?text=No+Image'"/>
+      </div>
+      <div class="event-date-badge" aria-hidden="true"></div>
+      <div class="event-content">
+        <h3>Design Jam</h3>
+        <p>Participate in creative challenges focusing on world-building and character design.</p>
+        <span>July 2025</span>
+      </div>
+    </article>
+
+    <article class="event-block" tabindex="0" aria-label="Showcase Night Event">
+      <div class="event-thumb">
+        <img src="https://via.placeholder.com/120x160?text=Showcase+Night" alt="Showcase Night Thumbnail" onerror="this.src='https://via.placeholder.com/120x160?text=No+Image'"/>
+      </div>
+      <div class="event-date-badge" aria-hidden="true"></div>
+      <div class="event-content">
+        <h3>Showcase Night</h3>
+        <p>Members present their completed and ongoing games to the community in an interactive showcase.</p>
+        <span>September 2025</span>
+      </div>
+    </article>
+
+    <article class="event-block" tabindex="0" aria-label="Hackathon Event">
+      <div class="event-thumb">
+        <img src="https://via.placeholder.com/120x160?text=Hackathon" alt="Hackathon Thumbnail" onerror="this.src='https://via.placeholder.com/120x160?text=No+Image'"/>
+      </div>
+      <div class="event-date-badge" aria-hidden="true"></div>
+      <div class="event-content">
+        <h3>Hackathon</h3>
+        <p>A high-energy 24-hour event to develop innovative and prototype-level game projects.</p>
+        <span>November 2025</span>
+      </div>
+    </article>
   </div>
 </section>
 
+</main>
 
-
-<!-- Domains -->
-<section id="domains" class="py-20 px-6">
-  <h2 class="text-3xl font-bold text-center mb-12">Domains</h2>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-
-    <!-- Technical -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center hover:scale-105 transition">
-      <svg class="w-12 h-12 mx-auto mb-4 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M9.75 3v2.25M14.25 3v2.25M4.5 9.75h15M7.5 21h9m-12-3h15a2.25 2.25 0 0 0 2.25-2.25V7.5A2.25 2.25 0 0 0 19.5 5.25h-15A2.25 2.25 0 0 0 2.25 7.5v8.25A2.25 2.25 0 0 0 4.5 18Z"/>
-      </svg>
-      <h3 class="text-xl font-semibold mb-3">Technical</h3>
-      <p class="text-gray-400">Covers programming, game engines, multiplayer systems, AI, and performance optimization.</p>
-    </div>
-
-    <!-- Creative -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center hover:scale-105 transition">
-      <svg class="w-12 h-12 mx-auto mb-4 text-pink-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M15.232 5.232a3 3 0 0 1 4.242 4.242L7.5 21.45 2.25 22.5l1.05-5.25 11.932-12.018Z"/>
-      </svg>
-      <h3 class="text-xl font-semibold mb-3">Creative</h3>
-      <p class="text-gray-400">Handles concept art, 2D/3D assets, animations, level design, and visual storytelling.</p>
-    </div>
-
-    <!-- Content -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center hover:scale-105 transition">
-      <svg class="w-12 h-12 mx-auto mb-4 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M12 6v12m6-6H6"/>
-      </svg>
-      <h3 class="text-xl font-semibold mb-3">Content</h3>
-      <p class="text-gray-400">Focuses on game writing, lore, tutorials, devlogs, and content that builds community.</p>
-    </div>
-
-    <!-- Corporate -->
-    <div class="bg-gray-800 p-6 rounded-xl shadow-lg text-center hover:scale-105 transition">
-      <svg class="w-12 h-12 mx-auto mb-4 text-green-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M3 7h18M3 12h18M3 17h18"/>
-      </svg>
-      <h3 class="text-xl font-semibold mb-3">Corporate</h3>
-      <p class="text-gray-400">Manages sponsorships, industry collaborations, events, and ensures smooth club operations.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- Events Section -->
-<section id="events" class="py-20 px-6 bg-gray-800">
-  <h2 class="text-3xl font-bold text-center mb-16">Events</h2>
-
-  <div class="relative max-w-6xl mx-auto space-y-20">
-
-    <!-- Row 1 -->
-    <div class="relative grid md:grid-cols-3 gap-12 items-center">
-      <!-- Timeline Line -->
-      <div class="absolute top-1/2 left-0 w-full h-1 bg-yellow-400 hidden md:block"></div>
-
-      <!-- Event 1 -->
-      <div class="relative flex flex-col items-center">
-        <div class="bg-gray-900 p-6 rounded-xl shadow-lg w-72 text-center transition transform hover:scale-105 hover:shadow-yellow-400/50 hover:shadow-2xl">
-          <img src="https://via.placeholder.com/300x150" alt="Event Thumbnail" class="rounded-lg mb-4">
-          <h3 class="text-xl font-semibold mb-3">Game Jam</h3>
-          <p class="text-gray-400">48-hour sprint to build fun & unique games.</p>
-          <p class="text-yellow-400 font-semibold mt-4">Jan 2025</p>
-        </div>
-      </div>
-
-      <!-- Event 2 -->
-      <div class="relative flex flex-col items-center">
-        <div class="bg-gray-900 p-6 rounded-xl shadow-lg w-72 text-center transition transform hover:scale-105 hover:shadow-yellow-400/50 hover:shadow-2xl">
-          <img src="https://via.placeholder.com/300x150" alt="Event Thumbnail" class="rounded-lg mb-4">
-          <h3 class="text-xl font-semibold mb-3">Unity Workshop</h3>
-          <p class="text-gray-400">Learn Unity basics, scripting & physics.</p>
-          <p class="text-yellow-400 font-semibold mt-4">Mar 2025</p>
-        </div>
-      </div>
-
-      <!-- Event 3 -->
-      <div class="relative flex flex-col items-center">
-        <div class="bg-gray-900 p-6 rounded-xl shadow-lg w-72 text-center transition transform hover:scale-105 hover:shadow-yellow-400/50 hover:shadow-2xl">
-          <img src="https://via.placeholder.com/300x150" alt="Event Thumbnail" class="rounded-lg mb-4">
-          <h3 class="text-xl font-semibold mb-3">Industry Talk</h3>
-          <p class="text-gray-400">Insights from game dev professionals.</p>
-          <p class="text-yellow-400 font-semibold mt-4">May 2025</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Row 2 -->
-    <div class="relative grid md:grid-cols-3 gap-12 items-center">
-      <!-- Timeline Line -->
-      <div class="absolute top-1/2 left-0 w-full h-1 bg-yellow-400 hidden md:block"></div>
-
-      <!-- Event 4 -->
-      <div class="relative flex flex-col items-center">
-        <div class="bg-gray-900 p-6 rounded-xl shadow-lg w-72 text-center transition transform hover:scale-105 hover:shadow-yellow-400/50 hover:shadow-2xl">
-          <img src="https://via.placeholder.com/300x150" alt="Event Thumbnail" class="rounded-lg mb-4">
-          <h3 class="text-xl font-semibold mb-3">Design Jam</h3>
-          <p class="text-gray-400">Creative challenge to design worlds & characters.</p>
-          <p class="text-yellow-400 font-semibold mt-4">Jul 2025</p>
-        </div>
-      </div>
-
-      <!-- Event 5 -->
-      <div class="relative flex flex-col items-center">
-        <div class="bg-gray-900 p-6 rounded-xl shadow-lg w-72 text-center transition transform hover:scale-105 hover:shadow-yellow-400/50 hover:shadow-2xl">
-          <img src="https://via.placeholder.com/300x150" alt="Event Thumbnail" class="rounded-lg mb-4">
-          <h3 class="text-xl font-semibold mb-3">Showcase Night</h3>
-          <p class="text-gray-400">Members present their games to the community.</p>
-          <p class="text-yellow-400 font-semibold mt-4">Sep 2025</p>
-        </div>
-      </div>
-
-      <!-- Event 6 -->
-      <div class="relative flex flex-col items-center">
-        <div class="bg-gray-900 p-6 rounded-xl shadow-lg w-72 text-center transition transform hover:scale-105 hover:shadow-yellow-400/50 hover:shadow-2xl">
-          <img src="https://via.placeholder.com/300x150" alt="Event Thumbnail" class="rounded-lg mb-4">
-          <h3 class="text-xl font-semibold mb-3">Hackathon</h3>
-          <p class="text-gray-400">Build innovative projects in 24 hours.</p>
-          <p class="text-yellow-400 font-semibold mt-4">Nov 2025</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
+<script src="scripts.js"></script>
 </body>
 </html>
